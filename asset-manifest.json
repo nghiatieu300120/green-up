@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.js": "/green-up/static/js/main.37eda095.chunk.js",
+    "main.js.map": "/green-up/static/js/main.37eda095.chunk.js.map",
+    "runtime-main.js": "/green-up/static/js/runtime-main.9577de93.js",
+    "runtime-main.js.map": "/green-up/static/js/runtime-main.9577de93.js.map",
+    "static/js/2.f15370f3.chunk.js": "/green-up/static/js/2.f15370f3.chunk.js",
+    "static/js/2.f15370f3.chunk.js.map": "/green-up/static/js/2.f15370f3.chunk.js.map",
+    "index.html": "/green-up/index.html",
+    "static/js/2.f15370f3.chunk.js.LICENSE.txt": "/green-up/static/js/2.f15370f3.chunk.js.LICENSE.txt",
+    "static/media/about-us.a719f1e7.png": "/green-up/static/media/about-us.a719f1e7.png",
+    "static/media/activec+.3d3e2a02.jpg": "/green-up/static/media/activec+.3d3e2a02.jpg",
+    "static/media/banner-home.3bdaa6aa.gif": "/green-up/static/media/banner-home.3bdaa6aa.gif",
+    "static/media/logo.477a4edb.png": "/green-up/static/media/logo.477a4edb.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9577de93.js",
+    "static/js/2.f15370f3.chunk.js",
+    "static/js/main.37eda095.chunk.js"
+  ]
+}

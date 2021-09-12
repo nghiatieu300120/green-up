@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { MdMenu, MdClose } from "react-icons/md";
 import NavTop from "../components/NavTop";
 import Logo from "./../assets/images/logo.png";
@@ -174,22 +174,22 @@ function NavMenu() {
               <a href="https://order.greenup.com.vn/">Sản phẩm</a>
             </li>
             <li>
-              <a href="https://order.greenup.com.vn/">Nông sản GreenUP</a>
+              <a href="https://order.greenup.com.vn/collections/rau-cu-qua-tuoi-vietgap">Nông sản GreenUP</a>
             </li>
             <li>
-              <a href="https://order.greenup.com.vn/">Đặc sản GreenUP</a>
+              <a href="https://order.greenup.com.vn/collections/trai-cay-huu-co">Đặc sản GreenUP</a>
             </li>
             <li>
-              <a href="https://order.greenup.com.vn/">Thức uống C+</a>
+              <a href="https://order.greenup.com.vn/collections/c">Thức uống C+</a>
             </li>
             <li>
-              <a href="https://order.greenup.com.vn/">Nguyên liệu dinh dưỡng</a>
+              <a href="https://order.greenup.com.vn/collections/nguyen-lieu-dinh-duong">Nguyên liệu dinh dưỡng</a>
             </li>
             <li>
-              <a href="https://order.greenup.com.vn/">Hệ thống cửa hàng</a>
+            <Link to="/he-thong-cua-hang">Hệ thống cửa hàng</Link>
             </li>
             <li>
-              <a href="https://order.greenup.com.vn/">Về chúng tôi</a>
+              <Link to="/ve-green-up">Về chúng tôi</Link>
             </li>
           </ul>
         </div>

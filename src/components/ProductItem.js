@@ -66,10 +66,10 @@ const ProductItemStyle = styled.div`
     margin: 0 20px;
   }
   @media only screen and (max-width: 768px) {
-    width: 150px;
+    width: 170px;
     margin: 5px;
     .product__wrapper {
-      height: 250 px;
+      height: 260px;
     }
   }
 `;

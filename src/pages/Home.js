@@ -4,6 +4,7 @@ import HeroSection from '../components/HeroSection';
 import GreenupCollection from '../components/GreenupCollection';
 import CPlusCollection from '../components/CPlusCollection';
 import ProductCollection from '../components/ProductCollection';
+import Responsive from '../components/testing'
 
 
 function Home() {
@@ -14,7 +15,6 @@ function Home() {
             <GreenupCollection />
             <CPlusCollection />
             <ProductCollection/>
-            
         </>
     )
 }

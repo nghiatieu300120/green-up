@@ -7,7 +7,7 @@ import iconCall from "../assets/images/icon-call.png";
 
 const FooterStyle = styled.div`
   background-color: var(--green-primary);
-  padding-top: 5rem;
+  padding: 2rem;
   .footer__links {
     display: flex;
     flex-direction: row;
@@ -34,6 +34,7 @@ const FooterStyle = styled.div`
       h2 a {
         font-size: 2rem;
         font-weight: 700;
+        
       }
     }
   }
@@ -73,6 +74,7 @@ const FooterStyle = styled.div`
     .footer__links {
       flex-wrap: wrap;
       gap: 0rem;
+      margin-bottom: 1rem;
       .footer__col1 {
         margin-bottom: 2rem;
         width: 50%;
@@ -86,16 +88,22 @@ const FooterStyle = styled.div`
         text-align: left;
         margin-top: 0;
         margin-bottom: 2rem;
+        h1 {
+          font-size: 16px;
+        }
       }
       .footer__col1 {
         margin-bottom: 2rem;
         width: 50%;
+        h2 , h1{
+          font-size: 16px;
+        }
         .customer__service {
           img {
             width: 30px;
           }
           h2 a {
-            font-size: 1.5rem;
+            font-size: 16px;
             font-weight: 700;
           }
         }
@@ -122,33 +130,33 @@ function Footer() {
               links={[
                 {
                   title: "Về GreenUP",
-                  path: "/",
+                  path: "/ve-green-up",
                   type: "Link",
                 },
                 {
                   type: "Link",
                   title: "Câu chuyện thức uống",
-                  path: "/about",
+                  path: "/cau-chuyen-thuc-uong",
                 },
                 {
                   type: "Link",
                   title: "Trang trại GreenUP",
-                  path: "/projects",
+                  path: "/trang-trai-green-up",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Tin tức khuyến mãi",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/blogs/khuyen-mai",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Tin tức",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/blogs/news",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Tuyển dụng",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/blogs/tuyen-dung",
                 },
               ]}
             />
@@ -159,38 +167,43 @@ function Footer() {
               links={[
                 {
                   title: "Nông sản GreenUP",
-                  path: "/",
-                  type: "Link",
+                  path: "https://order.greenup.com.vn/collections/rau-cu-qua-tuoi-vietgap",
+                  type: "External",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Đặc sản GreenUP",
-                  path: "/about",
+                  path: "https://order.greenup.com.vn/collections/trai-cay-huu-co",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "C+ Rau Má Mix",
-                  path: "/projects",
+                  path: "https://order.greenup.com.vn/collections/rau-ma-vietgap",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "C+ Detox",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/collections/thuc-uong-detox",
                 },
                 {
-                  type: "Link",
+                  type: "External",
+                  title: "C+ Juice",
+                  path: "https://order.greenup.com.vn/collections/juice",
+                },
+                {
+                  type: "External",
                   title: "C+ Smoothies",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/collections/smoothies",
                 },
                 {
-                  type: "Link",
-                  title: "Fruit & Salad",
-                  path: "/contact",
+                  type: "External",
+                  title: "C+ Fruit & Salad",
+                  path: "https://order.greenup.com.vn/collections/salad",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Nguyên liệu dinh dưỡng",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/collections/nguyen-lieu-dinh-duong",
                 },
               ]}
             />
@@ -201,23 +214,23 @@ function Footer() {
               links={[
                 {
                   title: "Kiến thức thực phẩm",
-                  path: "/",
-                  type: "Link",
+                  path: "https://order.greenup.com.vn/blogs/kien-thuc-thuc-pham",
+                  type: "External",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Cẩm nang Ăn Sống Khoẻ",
-                  path: "/about",
+                  path: "https://order.greenup.com.vn/blogs/cam-nang-an-song-khoe",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Công thức C+",
-                  path: "/projects",
+                  path: "https://order.greenup.com.vn/blogs/cong-thuc-c",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Khác",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/blogs/news",
                 },
               ]}
             />
@@ -228,23 +241,23 @@ function Footer() {
               links={[
                 {
                   title: "Facebook",
-                  path: "/",
-                  type: "Link",
+                  path: "https://www.facebook.com/GreenUP.ThucPhamXanh",
+                  type: "External",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Instagram",
-                  path: "/about",
+                  path: "https://www.instagram.com/",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Tiktok",
-                  path: "/projects",
+                  path: "https://www.tiktok.com/en/",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Group",
-                  path: "/contact",
+                  path: "https://www.facebook.com/GreenUP.ThucPhamXanh",
                 },
               ]}
             />
@@ -299,23 +312,23 @@ function Footer() {
               links={[
                 {
                   title: "Chính sách bảo mật thông tin",
-                  path: "/",
-                  type: "Link",
+                  path: "https://order.greenup.com.vn/pages/chinh-sach-bao-mat",
+                  type: "External",
                 },
                 {
-                  type: "Link",
-                  title: "Liên hệ",
-                  path: "/about",
+                  type: "External",
+                  title: "Các câu hỏi thường gặp",
+                  path: "https://order.greenup.com.vn/pages/cau-hoi-thuong-gap",
                 },
                 {
-                  type: "Link",
-                  title: "Chính sách vận chuyển",
-                  path: "/projects",
+                  type: "External",
+                  title: "Chính sách giao hàng",
+                  path: "https://order.greenup.com.vn/pages/chinh-sach-giao-hang",
                 },
                 {
-                  type: "Link",
+                  type: "External",
                   title: "Hướng dẫn mua hàng",
-                  path: "/contact",
+                  path: "https://order.greenup.com.vn/pages/huong-dan-doi-tra-va-mua-hang",
                 },
               ]}
             />

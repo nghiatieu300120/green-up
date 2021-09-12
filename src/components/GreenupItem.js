@@ -3,42 +3,51 @@ import Button from "./Button";
 import styled from "styled-components";
 
 const GreenupItemStyle = styled.div`
-  margin: 0 10px;
   padding: 0;
-  width: 33%;
+  width: 100%;
   cursor: pointer;
+  margin: 10px 0 25px 0;
   .item-block {
-    border: 4px solid #fff;
-    border-radius: 10px;
+    border: 2px solid #f2f2f2;
     display: inline-block;
     width: 100%;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    position: relative;
+    height:400px;
     transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     &:hover {
-      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+      box-shadow: 0 9px 18px rgba(0, 0, 0, 0.25),
+        0 5px 5px rgba(0, 0, 0, 0.22);
     }
     img {
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height:350px;
-      border-radius: 10px 10px 0 0;
     }
-    .item-inner {
+    .overlay {
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
-      height: 100px;
-      display: flex;
-      background-color: #fff;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      .item-inner__header {
+      background: rgb(63,94,251);
+      background: radial-gradient(circle, rgba(63,94,251,0) 0%, rgba(0,0,0,0.6068802521008403) 100%);
+    }
+    .item-inner__header {
+      position: absolute;
+      top: 10px;
+      left: 10px;
         font-size: 23px;
         font-weight: 700;
-        max-width: 200px;
+        max-width: 250px;
         line-height: 30px;
-        color: var(--green-primary);
+        color: #fff;
         margin-left: 20px;
       }
       .item-inner__btn {
+        position: absolute;
+      bottom: 15px;
+      right: 10px;
         margin-right: 20px;
         .button {
           border: none;
@@ -46,7 +55,6 @@ const GreenupItemStyle = styled.div`
           font-size: 1.5rem;
         }
       }
-    }
   }
   @media only screen and ( max-width: 768px){
     width: 90%;
@@ -84,12 +92,11 @@ function GreenupItem({
       <div className="item-block">
         <a href={linkCollection}>
           <img src={linkImg} />
-          <div className="item-inner">
-            <div className="item-inner__header">{heading}</div>
-            <div className="item-inner__btn">
-              <Button btnLink={linkCollection} btnText={titleButton} />
+          <div className="overlay"></div>
+          <div className="item-inner__header">{heading}</div>
+          <div className="item-inner__btn">
+              <Button btnLink={linkCollection} btnText={titleButton} isEx={true} />
             </div>
-          </div>
         </a>
       </div>
     </GreenupItemStyle>

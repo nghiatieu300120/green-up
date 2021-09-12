@@ -14,6 +14,10 @@ const ButtonStyle = styled.div`
     border-radius: 0;
     display: inline-block;
     color: ${(props) => (props.outline ? 'var(--green-secondary)' : 'white')};
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    &:hover {
+      transform: scale(1.08);
+    }
   }
   @media only screen and (max-width: 768px) {
     .button {
@@ -25,13 +29,12 @@ const ButtonStyle = styled.div`
 export default function Button({
   btnText = 'test',
   btnLink = 'test',
+  isEx = false,
   outline = false,
 }) {
   return (
     <ButtonStyle outline={outline} className="button-wrapper">
-      <Link className="button" to={btnLink}>
-        {btnText}
-      </Link>
+      {isEx ?  <a className="button" href={btnLink} target="__blank">{btnText}</a> : <Link className="button" to={btnLink}>{btnText}</Link>}
     </ButtonStyle>
   );
 }

@@ -18,6 +18,8 @@ const ProductCollectionStyle = styled.div`
   .collection-product {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     flex-wrap: wrap;
   }

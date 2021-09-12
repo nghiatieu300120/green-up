@@ -49,21 +49,21 @@ function NavTop({content}) {
                         <p>{content}</p>
                         <div className="add-on-link">
                     
-                                    <NavLink
-                                        to="/"
+                                    <a
+                                        href="https://order.greenup.com.vn/pages/kiem-tra-don-hang"
                                         target="__blank"
-                                    >Tra cứu đơn hàng</NavLink>
+                                    >Tra cứu đơn hàng</a>
                                 
                                
-                                    <NavLink
-                                        to="/"
+                                    <a
+                                        href="https://order.greenup.com.vn/blogs/khuyen-mai"
                                         target="__blank"
-                                    >Khuyến mãi</NavLink>
+                                    >Khuyến mãi</a>
                                
-                                    <NavLink
-                                        to="/"
+                                    <a
+                                        href="https://order.greenup.com.vn/pages/lien-he"
                                         target="__blank"
-                                    >Liên hệ</NavLink>
+                                    >Liên hệ</a>
                         
                         </div>
                         

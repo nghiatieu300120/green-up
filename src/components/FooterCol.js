@@ -37,12 +37,12 @@ function FooterCol({
       <ul>
         {links.map((item, index) => (
           <li key={index}>
-            {item.type === 'Link' ? (
-              <Link to={item.path}>{item.title}</Link>
-            ) : (
+            {item.type === 'External' ? (
               <a href={item.path} target="_blank" rel="noreferrer">
                 {item.title}
               </a>
+            ) : (
+              <Link to={item.path}>{item.title}</Link>
             )}
           </li>
         ))}

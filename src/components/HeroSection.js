@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Banner from "../assets/images/banner-home.gif";
 import PText from "./PText";
 import {ImQuotesLeft} from 'react-icons/im'
+import "animate.css"
 
 const AboutSectionStyles = styled.div`
   padding: 0;
@@ -48,8 +49,8 @@ const AboutSectionStyles = styled.div`
 function HeroSection() {
   return (
     <AboutSectionStyles>
-      <div className="hero__image">
-        <img src={Banner} />
+      <div className="hero__image animate__fadeInDown">
+        <img src={Banner} alt="banner"/>
       </div>
       <div className="hero__quote">
         <ImQuotesLeft />

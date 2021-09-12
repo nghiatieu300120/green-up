@@ -12,6 +12,8 @@ const GlobalStyle = createGlobalStyle`
     --green-secondary: #148E0F;
     --white : white;
     --black: black;
+    --animate-duration: 800ms;
+    --animate-delay: 0.3s;
   }
   html{
     font-size: 10px;
@@ -33,8 +35,8 @@ const GlobalStyle = createGlobalStyle`
     outline: none
   }
   .container {
-    max-width: 1200px;
-    width: 90%;
+    max-width: 1300px;
+    width: 100%;
     margin: 0 auto;
   }
 /* Smooth Scroll  */
